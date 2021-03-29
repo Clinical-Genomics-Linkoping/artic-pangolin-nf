@@ -2,7 +2,7 @@
 
 #=================================================================================#
 
-RUN the pipeline
+RUN the pipeline \
 A. For Illumina
 ```
 module load nextflow-20.10.0
