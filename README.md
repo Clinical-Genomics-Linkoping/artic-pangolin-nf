@@ -4,15 +4,17 @@
 
 RUN the pipeline
 A. For Illumina
+```
 module load nextflow-20.10.0
 module load java.8
 
 conda env create -f environments/illumina/environment.yml
 conda activate artic-ncov2019-illumina
 nextflow run main.nf [-profile conda] --illumina --prefix "test_illumina" --directory .github/data/fastqs/
-
+```
 
 B. For nanopore/nanopolish
+```
 module load nextflow-20.10.0
 module load java.8
 
@@ -22,7 +24,7 @@ nextflow run main.nf [-profile conda] --nanopolish --prefix "test" \
                 --basecalled_fastq .github/data/nanopore/20200311_1427_X1_FAK72834_a3787181/fastq_pass/ \
                 --fast5_pass .github/data/nanopore/20200311_1427_X1_FAK72834_a3787181/fast5_pass/ \
                 --sequencing_summary .github/data/nanopore/20200311_1427_X1_FAK72834_a3787181/sequencing_summary_FAK72834_298b7829.txt
-
+```
 
 #=================================================================================#
 
